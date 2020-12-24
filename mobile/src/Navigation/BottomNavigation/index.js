@@ -13,7 +13,7 @@ const Tab = createMaterialBottomTabNavigator();
 export default function MyTabs() {
     return (
         <NavigationContainer>
-            <Tab.Navigator initialRouteName={"Inicio"} barStyle={{ backgroundColor: '#494747' }} inactiveColor={"white"}>
+            <Tab.Navigator initialRouteName={"Início"} barStyle={{ backgroundColor: '#494747' }} >
                 <Tab.Screen name="Sobre" component={About} options={{
                     tabBarIcon: () => (<Feather name={"bar-chart-2"} size={24} color={"white"} />),
                 }} />
