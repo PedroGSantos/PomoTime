@@ -19,6 +19,7 @@
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.4.tar.gz",
     "react-native-material-bottom-navigation": "^1.0.5",
+    "react-native-modal-datetime-picker": "^9.1.0",
     "react-native-paper": "^4.4.1",
     "react-native-responsive-screen": "^1.4.1",
     "react-native-svg": "12.1.0",
