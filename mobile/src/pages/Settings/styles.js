@@ -67,6 +67,10 @@ export default StyleSheet.create({
         color: '#B9BFC5'
     },
 
+    textDuration2: {
+        color: '#000'
+    },
+
     slider: {
         width: wp('31.7%')
     },

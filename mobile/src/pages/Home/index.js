@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
 
+import { DurationContext } from '../../store';
 import Logo from '../../assets/logo.svg';
 
 export default function Home() {
+    const [durationPomodoro, setDurationPomodoro, shortBreak, setShortBreak, longBreak, setLongBreak] = useContext(DurationContext);
+
     return (
         <View style={styles.container}>
             <View style={styles.header}>
@@ -15,8 +18,8 @@ export default function Home() {
                 </View>
             </View>
             <View style={styles.content}>
-                <Text style={styles.time}>25:00</Text>
-                <TouchableOpacity style={styles.button}>
+                <Text style={styles.time}>{new Date()}</Text>
+                <TouchableOpacity style={styles.button} onPress={() => setDurationPomodoro(durationPomodoro + 1)}>
                     <Text style={styles.buttonText}>Começar</Text>
                 </TouchableOpacity>
                 <View style={styles.dataView}>
